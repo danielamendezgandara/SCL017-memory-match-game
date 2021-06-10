@@ -385,3 +385,5 @@ Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
 * [ ] UI: Indica al usuario que ganó cuando sea relevante.
 * [ ] UI: Es _responsive_.
 * [ ] UI: La interfaz sigue los fundamentos de _visual design_.
+
+Probando GitHub Colaborativo 
