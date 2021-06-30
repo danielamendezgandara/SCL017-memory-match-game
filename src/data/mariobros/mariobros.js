@@ -1,5 +1,5 @@
 export default {
-  name: 'Pokemon',
+  name: 'MarioBros',
   items: [
     { id: 'mariobros', image: 'data/mariobros/img/mariobros.png', bgColor: '#339933' },
     { id: 'luigi', image:'data/mariobros/img/luigi.png' , bgColor: '#339933' },

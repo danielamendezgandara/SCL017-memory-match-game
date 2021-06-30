@@ -29,16 +29,21 @@
 
 
 const App = (data,dataJS) => {
-  let dataObject=Object.entries(dataJS);
-  let backCardObject=Object.values(dataObject[2]);
-  const containerCards=document.createElement('section');
-  containerCards.className='container-grid';
-  let click=[];
-let flipped=[];
-let cartasGiradas=[];
-let delay=1200;
+
+    let firstGuess = '';
+    let secondGuess = '';
+    let count = 0;
+    let previousTarget = null;
+    let delay = 1200;
+
+
+  const  dataObject=Object.entries(dataJS);
+  const  backCardObject=Object.values(dataObject[2]);
+  const  containerCards=document.createElement('section');
+  containerCards.className='grid';
   
-const cardCliked=(cardSet)=>{
+  
+/*const cardCliked=(cardSet)=>{
   for (let i=0 ;i<cardSet.length;i++){
        cardSet[i].classList.toggle('flipped');
        cartasGiradas.push(cardSet[i]);
@@ -66,13 +71,15 @@ const change=(event)=>{
   flippCard(event.currentTarget,idCard);
   console.log(cartasGiradas);
   console.log(idCard);
-};
+};*/
     
 
 
   data.forEach((key,id)=>{
+
     const card=document.createElement('div');
     card.className='card';
+
     const frontCard=document.createElement('div');
     const imageFrontCard=document.createElement('img');
     frontCard.className='frontCard';
@@ -92,8 +99,33 @@ const change=(event)=>{
     card.appendChild(frontCard);
     card.appendChild(backCard);
     containerCards.appendChild(card);
-    card.addEventListener('click',change);   
+    
+   
 }); 
+
+card.addEventListener('click',event=>{
+
+     const clicked = event.currentTarget;
+     
+
+
+
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
   return containerCards;
 };
 

@@ -11,7 +11,7 @@
     margin: 0px 0px 20px 20px;
 }
 
-.container-grid {
+.grid {
     display: inline-grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
@@ -34,6 +34,7 @@
 .card{
     transform-style: preserve-3d;
     transition: 0.5s cubic-bezier(0.0, -0.1, 0.265, 1.55);
+    position: relative;
 }
 .card.flipped{
     transform: rotateY(180deg);
@@ -69,7 +70,7 @@
     border-radius: 15px;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
 }
 .imageBackCard{
     width: 90px;
