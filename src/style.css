@@ -14,53 +14,88 @@
 .container-grid {
     display: inline-grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
+    grid-gap: 20px;
     grid-column: 1;
-    margin-left: 430px;
+    margin-left: 40%;
     margin-top: 12%;
+    /*display: flex;*/
+    flex-wrap: wrap;
+    background-color: blue;
 }
-/*.container-box:hover.container-front-back{
-   transform: rotateY(180deg);
-}*/
-.container-front-back{
-  transform-style: preserve-3d;
+/*.flipped{
   transform: rotateY(180deg);
-  transition: all 0.5s linear;
+}*/
+
+/*.flipped2{
+    transform: rotateY(180deg);
+
+}*/
+
+.card{
+    transform-style: preserve-3d;
+    transition: 0.5s cubic-bezier(0.0, -0.1, 0.265, 1.55);
 }
-
-/*card.style.transform="rotateY(180deg)";*/
-
-.container-image{
+.card.flipped{
+    transform: rotateY(180deg);
+}
+.frontCard{
     width: 90px;
     height: 90px;
     background-color: white;
     border-radius: 15px;
     border: 4px solid black;
     position: absolute;
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transform: rotateY(180deg);
+    /*flex-wrap: wrap;*/
 }
 .image{
     width: 60px;
     height: 70px;
-    /*border: 2px solid black;*/
     margin: 10px 10px 15px 15px;
-}
-.container-backCard{
-    width: 90px;
-    height: 90px;
-    border-radius: 15px;
+    filter: brightness(100%);
 }
 .backCard{
+    width: 94px;
+    height: 94px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    flex-wrap: wrap;
+}
+.imageBackCard{
     width: 90px;
     height: 90px;
-    display: block;
-    margin: auto;
+    justify-content: center;
     border-radius: 15px;
+    border:4px solid black;
     
 }
 body{
+    width: 80%;
     background-image:url("../img/mariobroscover8.jpg");
+    background-position:center;
     background-size:cover;
     background-repeat: no-repeat;
+    height: 100vh;
 }
+
+@media (max-width: 375px) {
+    .container-grid{
+      margin-left:430px;
+      margin-top: 80%;
+      display: inline-grid;
+      grid-template-columns: repeat(3, 1fr);
+      flex-wrap: wrap;
+      
+    }
+
+  }
