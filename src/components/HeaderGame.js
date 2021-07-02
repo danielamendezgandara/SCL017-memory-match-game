@@ -1,13 +1,12 @@
 //import pauseGame from "./Pausegame.js";
 const createHeader = () => {
-    let cont=0;
+    /*let cont=0;
 
      const playSound=()=>{
 
            if(!volume.paused && !volume.ended)   { 
               icon.className="fas fa-volume-mute fa-2x";
               volume.pause(); 
-              //volume.currentTime = 0
               cont=1;
            } else { 
               icon.className="fas fa-volume-up fa-2x";
@@ -32,10 +31,10 @@ const createHeader = () => {
                      volume.play();
                   }*/
                   
-               }
+             /*  }
               if(n==0){ clearInterval(x); volume.pause();}
               n--;
-              },1000);
+              },1000);*/
 
            
         
@@ -44,33 +43,33 @@ const createHeader = () => {
      containerIcons.className ='container-icons';
      const containerIconsLeft = document.createElement('div');
      containerIconsLeft.className ='container-icons-left';
-     const  containerIconsRight = document.createElement('div');
+     /*const  containerIconsRight = document.createElement('div');
      containerIconsRight.className = 'container-icons-right';
-     const icon=document.createElement('i');
+     const icon=document.createElement('I');
      icon.className="fas fa-volume-up fa-2x";
      icon.setAttribute('id','icon');
      containerIconsRight.appendChild(icon);
-     const containerVolume=document.createElement('div');
+     const containerVolume=document.createElement('div');*/
 
-     const volume=document.createElement('audio');
+    /* const volume=document.createElement('audio');
      volume.setAttribute('src','../sound/super-mario-bros-game.mp3');
      volume.setAttribute('id','audio');
      volume.play();
      containerVolume.appendChild(volume);
-     containerVolume.appendChild(containerIconsRight);
+     containerIconsRight.appendChild(containerVolume);*/
      const containerGameName =document.createElement('div');
-     containerIconsLeft.innerHTML = '<i class="fas fa-home fa-2x"></i><i class="fas fa-redo-alt fa-2x"></i>';
-     const pausedIcon=document.createElement('I');
+     containerIconsLeft.innerHTML = '<i class="fas fa-home fa-2x"></i><i class="fas fa-redo-alt fa-2x"></i><i class="fas fa-pause fa-2x"></i>';
+     /*const pausedIcon=document.createElement('i');
      pausedIcon.setAttribute('id','paused');
-     pausedIcon.className="fas fa-pause fa-2x";
+     pausedIcon.className="fas fa-pause fa-2x";*/
      //pausedIcon.addEventListener('click',pauseGame);
-     containerIconsLeft.appendChild(pausedIcon);
+     //containerIconsLeft.appendChild(pausedIcon);
      containerGameName.innerHTML ='<img class = "logo" src = "../img/mariobroslogo.png" width =30% ><br><img class ="nameGame" src= "../img/namegame.png" width =30%>';
      containerIcons.appendChild(containerIconsLeft);
-     containerIcons.appendChild(containerIconsRight);
+     //containerIcons.appendChild(containerIconsRight);
      headerGame.appendChild(containerIcons);
      headerGame.appendChild(containerGameName);
-     containerIconsRight.addEventListener('click',playSound);
+    // containerIconsRight.addEventListener('click',playSound);
      
     
      return headerGame;
