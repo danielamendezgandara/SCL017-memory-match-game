@@ -20,7 +20,7 @@ const App = (data,dataJS) => {
   let secondGuess = '';
   let index = 0;
   let previousTarget = null;
-  let delay = 1000;
+  let delay = 400;
 
 const  dataObject=Object.entries(dataJS);
 const  backCardObject=Object.values(dataObject[2]);
