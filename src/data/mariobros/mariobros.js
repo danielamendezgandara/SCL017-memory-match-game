@@ -1,14 +1,16 @@
 export default {
-  name: 'Pokemon',
+  name: 'MarioBros',
   items: [
-    { id: 'bulbasaur', image: 'https://www.serebii.net/pokemongo/pokemon/001.png', bgColor: '#339933' },
-    { id: 'ivysaur', image: 'https://www.serebii.net/pokemongo/pokemon/002.png', bgColor: '#339933' },
-    { id: 'venusaur', image: 'https://www.serebii.net/pokemongo/pokemon/003.png', bgColor: '#339933' },
-    { id: 'charmander', image: 'https://www.serebii.net/pokemongo/pokemon/004.png', bgColor: '#F05032' },
-    { id: 'charmeleon', image: 'https://www.serebii.net/pokemongo/pokemon/005.png', bgColor: '#F05032' },
-    { id: 'charizard', image: 'https://www.serebii.net/pokemongo/pokemon/006.png', bgColor: '#F05032' },
-    { id: 'squirtle', image: 'https://www.serebii.net/pokemongo/pokemon/007.png', bgColor: '#1572B6' },
-    { id: 'wartortle', image: 'https://www.serebii.net/pokemongo/pokemon/008.png', bgColor: '#1572B6' },
-    { id: 'blastoise', image: 'https://www.serebii.net/pokemongo/pokemon/009.png', bgColor: '#1572B6' },
+    { id: 'mariobros', image: 'data/mariobros/img/mariobros.png', bgColor: '#339933' },
+    { id: 'luigi', image:'data/mariobros/img/luigi.png' , bgColor: '#339933' },
+    { id: 'yoshi', image:'data/mariobros/img/yoshi.png' , bgColor: '#339933' },
+    { id: 'princessPeach', image:'data/mariobros/img/princessPeach.png' , bgColor: '#339933' },
+    { id: 'toad', image:'data/mariobros/img/toad.png' , bgColor: '#339933' },
+    { id: 'bowser', image: 'data/mariobros/img/bowser.png' , bgColor: '#339933' },
+    { id: 'toadette', image: 'data/mariobros/img/toadette.png' , bgColor: '#339933' },
+    { id: 'goomba', image: 'data/mariobros/img/goomba.png' , bgColor: '#339933' },
+    { id: 'koopaTroopa', image: 'data/mariobros/img/koopaTroopa.png' , bgColor: '#339933' },
+    { id: 'bulletBill', image: 'data/mariobros/img/bulletBill.png' , bgColor: '#339933' }
   ],
+  backCard:'data/mariobros/img/blockmariobros.png',
 };
