@@ -3,13 +3,15 @@ const setData=(dataObject)=>{
     const setItems=Object.values(arrayObject[1][1]);
     let arraySetImage=[];
     for (const element in setItems) {
-        let arrayItems=Object.entries(setItems[element]).filter(([key,value]) =>(key!='bgColor')?[key,value]:false);
-        let objectItems= Object.fromEntries(arrayItems);
-        arraySetImage.push(objectItems);
+        let arrayItemsImage=Object.entries(setItems[element]).filter(([key,value]) =>(key!='bgColor')?[key,value]:false);
+        let objectItemsImage= Object.fromEntries(arrayItemsImage);
+        let arraySrcImage=Object.values(objectItemsImage);
+        arraySetImage.push(arraySrcImage);
     }
 
-
-return arraySetImage;  
+/*let setImage=arraySetImage.reduce((total, currentValue) => total.concat(currentValue), []);
+return setImage;  */
+return arraySetImage;
 
 };
 
