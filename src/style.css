@@ -1,22 +1,241 @@
-body {
-    margin: 20px 0;
-    background: #6589f9;
-  }
-  
-  .grid {
-    max-width: 960px;
-    margin: 0 auto;
+@import url(//db.onlinewebfonts.com/c/b2e75c336df191233b3096682c9ee6be?family=PixelarRegularW01-Regular);
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.displayGame{
+    width: 50%;
+    display: flex;
+    margin-left: 430px;
+    margin-top: 3%;
+    justify-content: space-between;
+}
+.displayTurn,
+.displayLevel,
+.displayTime {
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: 'PixelarRegularW01-Regular';
+    font-size: 30px;
+    font-weight: bold;
+  /*-webkit-text-stroke-width: 1px;
+-webkit-text-border-color: black;*/
+}
+
+.displayLevel,.displayTurn,.displayTime p{
+  text-align: center;
+}
+
+.paragraph{
+  color: black;
+}
+.container-icons{
+    display: flex;
+    margin-top: 1%;
+    margin-left: 25%;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.container-icons-right{
+    display: flex;
+    justify-content: space-between;
+}
+.container-icons-right i {
+    color: #dfba14;
+    -webkit-text-stroke-width: 2px;
+-webkit-text-stroke-color: black;
+cursor: pointer;
+}
+
+.container-icons-right i:hover{
+    color:blueviolet;
+    /*text-shadow: 5px 5px 5px  yellow;*/
+}
+
+.container-icons-left i{
+    padding-left: 10px;
+}
+
+.container-icons-left i.fas.fa-home{
+    color: #ED1B1B;
+    -webkit-text-stroke-width: 3px;
+-webkit-text-stroke-color: black;
+}
+
+.container-icons-left i.fas.fa-redo-alt{
+    color: #139A11;
+    -webkit-text-stroke-width: 3px;
+-webkit-text-stroke-color: black;
+}
+
+.container-icons-left i.fas.fa-pause{
+    color: #2375EF;
+    -webkit-text-stroke-width: 3px;
+-webkit-text-stroke-color: black;
+}
+
+
+
+.logo{
+    margin-left: 65%;
+    width: 20%;
+}
+
+.nameGame{
+    margin-left: 61%;
+}
+
+
+.grid {
+    /*display: inline-grid;*/
+    width: 50%;
+   /* grid-template-columns: repeat(4, 1fr);*/
+   border-radius: 15px;
+    grid-gap: 20px;
+    grid-column: 1;
+    margin-left: 46%;
+    margin-top: 0%;
+    margin-bottom: 2%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    background-color: rgba(33, 117, 173, 0.9);
+    padding-left: 20px;
+    padding-top:20px ;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    /*justify-content: center;*/
+    justify-content: space-between
+
+
+}
+
+.card{
+    transform-style: preserve-3d;
+    transition: 0.5s cubic-bezier(0.0, -0.1, 0.265, 1.55);
+    position: relative;
+    cursor:pointer;
+}
+.card.flipped{
+    transform: rotateY(180deg);
+}
+
+@keyframes resplandorAnimation {
+    0%,100%{
+      box-shadow: 20px 20px 30px 30px yellow;
+      border-radius: 15px;
+    }
+    50%{
+    box-shadow: 0px 0px 0px;
+    
+    }
+  }
+
+.match{
+    /*display: none;*/
+    /*opacity: 0;
+    /*-webkit-transition: display 0.3s;
+   transition: display 0.3s;*/
+    /*-webkit-transform: scale(1.3);
+-ms-transform: scale(1.3);*/
+animation:infinite resplandorAnimation;
+animation-duration: 0.2s;
+transform: rotateY(90deg);
+transition: 1s;
+
+}
+
+.frontCard{
+    width: 90px;
+    height: 90px;
+    background-color: white;
+    border-radius: 15px;
+    border: 4px solid black;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+.image{
+    width: 60px;
+    height: 70px;
+    margin: 10px 10px 15px 15px;
+    filter: brightness(100%);
+}
+.backCard{
+    width: 94px;
+    height: 94px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    /*flex-wrap: wrap;*/
+}
+.imageBackCard{
+    width: 90px;
+    height: 90px;
+    justify-content: center;
+    border-radius: 15px;
+    border:4px solid black;
+    
+}
+body{
+    width: 70%;
+    background-image:url("../img/mariobroscover8.jpg");
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 110vh;
+}
+@media screen and (max-width: 375px) {
+    .body{
+        background-position:center;
+        height:100vh;
+    }
+    .grid{
+        width: 60%;
+        margin-left: 20%;
+        margin-top: 30%;
+    }
+
+  }
+
+  .alert{
+      color: red;
+      animation-name: parpadeo;
+      animation-duration: 1s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    
+      -webkit-animation-name:parpadeo;
+      -webkit-animation-duration: 1s;
+      -webkit-animation-timing-function: linear;
+      -webkit-animation-iteration-count: infinite;
   }
   
-  .card {
-    margin: 5px;
-    background-color: #6589f9;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 150px;
-    width: 150px;
+  @-moz-keyframes parpadeo{  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }
+  
+  @-webkit-keyframes parpadeo {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+  }
+  
+  @keyframes parpadeo {  
+    0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
   }
