@@ -24,7 +24,6 @@ const App = (data,dataJS) => {
     let previousTarget = null;
     let delay = 1000;
     let turn=0;
-    let score=0;
 
   const  dataObject=Object.entries(dataJS);
   const  backCardObject=Object.values(dataObject[2]);
@@ -92,7 +91,6 @@ const resetGuesses = () => {
           clicked.classList.add('flipped');
         } else {
           secondGuess = clicked.dataset.name;
-          console.log(secondGuess);
           clicked.classList.add('flipped');
         }
     
@@ -102,14 +100,15 @@ const resetGuesses = () => {
           turnCards.innerHTML=countTurn(turn);
           if (firstGuess === secondGuess) {
             setTimeout(match, delay);
-            audio.removeAttribute('src');
-            audio.setAttribute('src','../sound/mario-bros-up.mp3');
+            /*audio.removeAttribute('src');
+            audio.setAttribute('src','../sound/mario-bros-up.mp3');*/
+            audio.pause();
+            audio.src='../sound/mario-bros-up.mp3';
             audio.play();
           }
            setTimeout(resetGuesses, delay);
         }
        
-       // console.log(turn);
         previousTarget = clicked;
       }
   
