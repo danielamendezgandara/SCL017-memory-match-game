@@ -54,6 +54,8 @@ data.forEach(([id,image])=>{
   card.dataset.name = id;
   const frontCard=document.createElement('div');
   const imageFrontCard=document.createElement('img');
+  const audio=document.createElement('audio');
+  audio.src='../sound/mario-bros-jump.mp3';
   frontCard.className='frontCard';
   card.setAttribute('id',index.toString());
   imageFrontCard.className='image';
@@ -67,8 +69,10 @@ data.forEach(([id,image])=>{
   backCard.appendChild(imageBackCard);
   card.appendChild(frontCard);
   card.appendChild(backCard);
+  card.appendChild(audio);
   containerCards.appendChild(card);
   card.addEventListener('click', event => {
+    audio.play();
     let clicked=event.currentTarget;
     if (clicked === previousTarget ||
       clicked.classList.contains('flipped')||
@@ -89,6 +93,8 @@ data.forEach(([id,image])=>{
       if (firstGuess && secondGuess) {
         if (firstGuess === secondGuess) {
           setTimeout(match, delay);
+          audio.src='../sound/mario-bros-life.mp3';
+          //audio.play();
         }
          setTimeout(resetGuesses, delay);
       }
