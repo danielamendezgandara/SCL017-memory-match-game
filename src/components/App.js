@@ -16,12 +16,18 @@
 const App = (data,dataJS) => {
   let dataObject=Object.entries(dataJS);
   let backCardObject=Object.values(dataObject[2]);
+    
+  // console.log(dataObject);
   const container=document.createElement('section');
-  container.className='container-grid'
-  data.forEach((key,i)=>{
+  container.className='container-grid';
+  data.forEach((key,i)=>{   
+    var figura = key
+    var nombre = figura.split('/').pop().split('.')[0];
+    console.log(filename);
     const containerBox =document.createElement('div');
     const containerFrontBack=document.createElement('div');
-    //containerFrontBack.className='container-front-back';
+    containerFrontBack.className='container-front-back';
+    containerFrontBack.setAttribute('name',nombre);
     const imageContainer=document.createElement('div');
     const image=document.createElement('img');
     imageContainer.className='container-image';

@@ -9,3 +9,10 @@ import shuffle from './components/Shufflecards.js';
   .then(console.log)
   .catch(console.error);*/
 document.getElementById('root').appendChild(App (shuffle(setData(mariobros),6),mariobros));
+var cards=document.querySelectorAll(".container-front-back");
+for (let i = 0; i < cards.length; i++) {
+    cards[i].addEventListener('click',()=>{
+    console.log(cards[i].getAttribute('name'));
+  });
+  
+}

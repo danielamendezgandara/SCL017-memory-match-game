@@ -14,7 +14,7 @@ const shuffle = (dataImageInitial,numberElements) => {
            i++
         }
      }
-     
+    console.log(unshuffled); 
     let shuffled = unshuffled
        .map((a) => ({sort: Math.random(), value: a}))
        .sort((a, b) => a.sort - b.sort)
