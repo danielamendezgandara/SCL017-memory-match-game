@@ -14,6 +14,9 @@
 //   .catch(console.error);
 //
 
+/*import match from "./Match.js";
+import resetGuesses from "./ResetGuesses.js";*/
+
 const App = (data,dataJS) => {
   let count=0;
   let firstGuess = '';
@@ -29,7 +32,6 @@ containerGame.className='containerGame';
 const containerCards=document.createElement('section');
 containerCards.className='grid';
 
-
 const match = () => {
 const selected = document.querySelectorAll('.flipped');
 selected.forEach(card => {
@@ -43,7 +45,7 @@ secondGuess = '';
 count = 0;
 previousTarget = null;
 
-let selected = document.querySelectorAll('.flipped');
+const selected = document.querySelectorAll('.flipped');
 selected.forEach(card => {
   card.classList.remove('flipped');
 });
@@ -74,6 +76,7 @@ data.forEach(([id,image])=>{
   card.addEventListener('click', event => {
     audio.play();
     let clicked=event.currentTarget;
+    
     if (clicked === previousTarget ||
       clicked.classList.contains('flipped')||
       clicked.classList.contains('match')
@@ -85,20 +88,21 @@ data.forEach(([id,image])=>{
       if (count === 1) {
         firstGuess = clicked.dataset.name;
         clicked.classList.add('flipped');
+        console.log(clicked);
       } else {
         secondGuess = clicked.dataset.name;
         clicked.classList.add('flipped');
       }
+      
   
       if (firstGuess && secondGuess) {
         if (firstGuess === secondGuess) {
-          setTimeout(match, delay);
+          setTimeout(match(), delay);
           audio.src='../sound/mario-bros-life.mp3';
           //audio.play();
         }
-         setTimeout(resetGuesses, delay);
+         setTimeout(resetGuesses(), delay);
       }
-     
       previousTarget = clicked;
     }
 
