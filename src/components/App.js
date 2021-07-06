@@ -30,6 +30,7 @@ const App = (data,dataJS) => {
     card.dataset.name = id;
     const audio=document.createElement('audio');
     audio.setAttribute('src','../sound/mario-bros-jump.mp3');
+    audio.className='audio';
     const frontCard=document.createElement('div');
     const imageFrontCard=document.createElement('img');
     frontCard.className='frontCard';

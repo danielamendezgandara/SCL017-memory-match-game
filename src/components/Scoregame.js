@@ -1,6 +1,6 @@
-const countTurn=(turnCards)=>{
+const shiftCount=(turnCards)=>{
     let flipp=turnCards;
     return flipp;
 };
 
-export default countTurn;
+export default shiftCount;

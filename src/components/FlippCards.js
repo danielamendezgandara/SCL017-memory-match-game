@@ -1,8 +1,9 @@
 import match from "./Match.js";
 import resetGuesses from "./ResetGuesses.js";
+import shiftCount from "./Scoregame.js";
 
 const flippCards=()=>{
-    const audio=document.querySelector('audio');
+    const audio=document.querySelector('.audio');
     let count=0;
     let firstGuess = '';
     let secondGuess = '';
@@ -32,6 +33,8 @@ const flippCards=()=>{
             
         
             if (firstGuess && secondGuess) {
+               shiftCount(count);
+               console.log(shiftCount(count));
               if (firstGuess === secondGuess) {
                 setTimeout(match, delay);
                 audio.src='../sound/mario-bros-up.mp3';
