@@ -14,7 +14,7 @@
 //
 
 import countTurn from "./ScoreGame.js";
-//import pauseGame from "./Pausegame.js";
+import displayGame from "./DisplayGame.js";
 
 const App = (data,dataJS) => {
     let count=0;
@@ -117,51 +117,7 @@ const resetGuesses = () => {
     index++
 
 }); 
-const display=document.createElement('article');
-const displayTurn=document.createElement('div');
-const displayLevel=document.createElement('div');
-const displayTime=document.createElement('div');
-
-display.className='displayGame';
-displayTurn.className='displayTurn';
-displayLevel.className='displayLevel';
-displayTime.className='displayTime';
-
-
-displayTurn.innerHTML='<p class="paragraph">TURNOS<p>';
-displayLevel.innerHTML='<p class="paragraph">WORLD<p><p>1-3<p>';
-displayTime.innerHTML='<p class="paragraph">TIME<p>';
-
-const timerGame=document.createElement('P');
-timerGame.setAttribute('id','timer');
-
-displayTime.appendChild(timerGame);
-const turnCards=document.createElement('P');
-turnCards.setAttribute('id','turn');
-
-displayTurn.appendChild(turnCards);
-
-
-let n=39;
-let x = setInterval(function(){
-       if(n>=10){
-        timerGame.innerHTML='00:'+n;
-        }
-      if(n<10){
-
-         timerGame.innerHTML='00:0'+n;
-         timerGame.className='alert';
-     }
-    if(n==0){ clearInterval(x);}
-n--;
-},1000);
-
-
-
-display.appendChild(displayTurn);
-display.appendChild(displayLevel);
-display.appendChild(displayTime);
-  containerGame.appendChild(display);
+  containerGame.appendChild(displayGame());
   containerGame.appendChild(containerCards);
   return containerGame;
 };
