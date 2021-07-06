@@ -34,7 +34,7 @@ const flippCards=()=>{
             if (firstGuess && secondGuess) {
               if (firstGuess === secondGuess) {
                 setTimeout(match, delay);
-                audio.src='../sound/mario-bros-life.mp3';
+                audio.src='../sound/mario-bros-up.mp3';
                 audio.play();
               }
               firstGuess = '';
