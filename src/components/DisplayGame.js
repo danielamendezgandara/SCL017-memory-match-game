@@ -1,4 +1,5 @@
 import timer from "./Timer.js";
+
 const displayGame=()=>{
     const display=document.createElement('article');
     const displayTurn=document.createElement('div');
@@ -9,6 +10,7 @@ const displayGame=()=>{
     displayTurn.className='displayTurn';
     displayLevel.className='displayLevel';
     displayTime.className='displayTime';
+    
     
     
     displayTurn.innerHTML='<p class="paragraph">TURNOS<p>';

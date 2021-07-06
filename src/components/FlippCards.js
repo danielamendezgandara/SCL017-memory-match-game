@@ -2,6 +2,13 @@ import match from "./Match.js";
 import resetGuesses from "./ResetGuesses.js";
 import shiftCount from "./Scoregame.js";
 
+let turn=1;
+const turnCards=()=>{
+  let flipp=shiftCount(turn);
+  console.log(shiftCount(turn));
+  turn++;
+  return flipp;
+}
 const flippCards=()=>{
     const audio=document.querySelector('.audio');
     let count=0;
@@ -26,15 +33,13 @@ const flippCards=()=>{
             if (count === 1) {
               firstGuess = clicked.dataset.name;
               clicked.classList.add('flipped');
-            } else {
+            } else { 
+              document.getElementById('turn').innerHTML=turnCards();
               secondGuess = clicked.dataset.name;
               clicked.classList.add('flipped');
             }
             
-        
             if (firstGuess && secondGuess) {
-               shiftCount(count);
-               console.log(shiftCount(count));
               if (firstGuess === secondGuess) {
                 setTimeout(match, delay);
                 audio.src='../sound/mario-bros-up.mp3';
