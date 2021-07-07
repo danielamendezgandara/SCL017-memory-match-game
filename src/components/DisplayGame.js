@@ -26,7 +26,6 @@ const displayGame=()=>{
     
     displayTurn.appendChild(turnCards);
     
-    //timer(39,timerGame);
     display.appendChild(displayTurn);
     display.appendChild(displayLevel);
     display.appendChild(displayTime);
@@ -38,5 +37,3 @@ const displayGame=()=>{
 
 
 export default displayGame;
-//export {myTimer};
-
