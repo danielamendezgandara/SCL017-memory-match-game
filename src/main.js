@@ -12,5 +12,21 @@ document.getElementById('root').appendChild(createHeader());
 //document.getElementById('root').appendChild(displayGame());
 document.getElementById('root').appendChild(App (shuffle(setData(mariobros),6),mariobros));
 flippCards();
+const time=document.getElementById('timer');
+console.log(time);
+let n=39;
+const myTimer=()=>{
+   if(n>=10){
+       time.innerHTML='00:'+n;
+       }
+     if(n<10){
 
+        time.innerHTML='00:0'+n;
+        time.className='alert';
+    }
+   if(n==0){ return false;}
+   n--;
+};
+
+setInterval(myTimer,1000);
 

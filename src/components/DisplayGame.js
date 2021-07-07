@@ -1,4 +1,4 @@
-import timer from "./Timer.js";
+//import timer from "./Timer.js";
 
 const displayGame=()=>{
     const display=document.createElement('article');
@@ -26,8 +26,7 @@ const displayGame=()=>{
     
     displayTurn.appendChild(turnCards);
     
-    timer(timerGame);
-    
+    //timer(39,timerGame);
     display.appendChild(displayTurn);
     display.appendChild(displayLevel);
     display.appendChild(displayTime);
@@ -36,5 +35,8 @@ const displayGame=()=>{
 
 };
 
+
+
 export default displayGame;
+//export {myTimer};
 
