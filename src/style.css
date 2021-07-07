@@ -116,7 +116,7 @@ cursor: pointer;
 
 .card{
     transform-style: preserve-3d;
-    transition: 0.5s cubic-bezier(0.0, -0.1, 0.265, 1.55);
+    transition: 0.3s cubic-bezier(0.0, -0.1, 0.265, 1.55);
     position: relative;
     cursor:pointer;
 }
