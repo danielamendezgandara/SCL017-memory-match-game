@@ -13,7 +13,6 @@ document.getElementById('root').appendChild(createHeader());
 document.getElementById('root').appendChild(App (shuffle(setData(mariobros),6),mariobros));
 flippCards();
 const time=document.getElementById('timer');
-console.log(time);
 let n=39;
 const myTimer=()=>{
    if(n>=10){

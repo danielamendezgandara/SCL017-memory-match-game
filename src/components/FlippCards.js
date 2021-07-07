@@ -5,7 +5,6 @@ import shiftCount from "./Scoregame.js";
 let turn=1;
 const turnCards=()=>{
   let flipp=shiftCount(turn);
-  console.log(shiftCount(turn));
   turn++;
   return flipp;
 }
