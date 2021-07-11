@@ -7,12 +7,10 @@ const shuffle = (dataImageInitial,numberElements) => {
 
     while(i<numberElements){
         let index=Math.floor(Math.random() * ((dataImageLength-i) -0)) + 0;
-        if (index !==-1){
            let randomImage=dataImage[index];
            dataImage = dataImage.filter(element => element!=randomImage);
            unshuffled.push(randomImage,randomImage);
            i++
-        }
      }
      
     let shuffled = unshuffled

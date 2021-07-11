@@ -1,66 +1,107 @@
-.container-icons{
-    display: inline-block;
-    background-color: blanchedalmond;
+@import url(//db.onlinewebfonts.com/c/b2e75c336df191233b3096682c9ee6be?family=PixelarRegularW01-Regular);
+
+
+* {
+	margin: 0;
+	padding: 0;
 }
 
-.container-icons-right{
-    display: inline;
-}
-
-.container-icons-left.fas{
-    margin: 0px 0px 20px 20px;
-}
-
-.container-grid {
-    display: inline-grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
+.grid {
+    /*display: inline-grid;*/
+    width: 50%;
+   /* grid-template-columns: repeat(4, 1fr);*/
+   border-radius: 15px;
+    grid-gap: 20px;
     grid-column: 1;
-    margin-left: 430px;
-    margin-top: 12%;
-}
-/*.container-box:hover.container-front-back{
-   transform: rotateY(180deg);
-}*/
-.container-front-back{
-  transform-style: preserve-3d;
-  transform: rotateY(180deg);
-  transition: all 0.5s linear;
+    margin-left: 40%;
+    margin-top: 20%;
+    margin-bottom: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(33, 117, 173, 0.9);
+    padding-left: 20px;
+    padding-top:20px ;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    /*justify-content: center;*/
+    justify-content: space-between
+
+
 }
 
-/*card.style.transform="rotateY(180deg)";*/
+.card{
+    transform-style: preserve-3d;
+    transition: 0.3s cubic-bezier(0.0, -0.1, 0.265, 1.55);
+    position: relative;
+    cursor:pointer;
+}
+.card.flipped{
+    transform: rotateY(180deg);
+}
 
-.container-image{
+
+.match{
+   opacity: 0;
+}
+
+.frontCard{
     width: 90px;
     height: 90px;
     background-color: white;
     border-radius: 15px;
     border: 4px solid black;
     position: absolute;
+    justify-content: center;
+    align-items: center;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transform: rotateY(180deg);
 }
 .image{
     width: 60px;
     height: 70px;
-    /*border: 2px solid black;*/
     margin: 10px 10px 15px 15px;
-}
-.container-backCard{
-    width: 90px;
-    height: 90px;
-    border-radius: 15px;
+    filter: brightness(100%);
 }
 .backCard{
+    width: 94px;
+    height: 94px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    /*flex-wrap: wrap;*/
+}
+.imageBackCard{
     width: 90px;
     height: 90px;
-    display: block;
-    margin: auto;
+    justify-content: center;
     border-radius: 15px;
+    border:4px solid black;
     
 }
 body{
+    width: 80%;
     background-image:url("../img/mariobroscover8.jpg");
+    background-position:center;
     background-size:cover;
     background-repeat: no-repeat;
+    height: 90vh;
 }
+@media screen and (max-width: 375px) {
+    .body{
+        background-position:center;
+        height:100vh;
+    }
+    .grid{
+        width: 60%;
+        margin-left: 20%;
+        margin-top: 30%;
+    }
+
+  }
+
+  
