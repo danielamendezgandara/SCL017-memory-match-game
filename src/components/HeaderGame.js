@@ -1,15 +1,14 @@
-//import pauseGame from "./Pausegame.js";
 const createHeader = () => {
     let cont=0;
 
      const playSound=()=>{
 
            if(!volume.paused && !volume.ended)   { 
-              icon.className="fas fa-volume-mute fa-2x";
+              icon.className="fas fa-volume-mute";
               volume.pause(); 
               cont=1;
            } else { 
-              icon.className="fas fa-volume-up fa-2x";
+              icon.className="fas fa-volume-up";
               volume.play(); 
               cont=2;
                
@@ -46,7 +45,7 @@ const createHeader = () => {
      const  containerIconsRight = document.createElement('div');
      containerIconsRight.className = 'container-icons-right';
      const icon=document.createElement('I');
-     icon.className="fas fa-volume-up fa-2x";
+     icon.className="fas fa-volume-up";
      icon.setAttribute('id','icon');
      containerIconsRight.appendChild(icon);
      const containerVolume=document.createElement('div');
@@ -58,13 +57,14 @@ const createHeader = () => {
      containerVolume.appendChild(volume);
      containerIconsRight.appendChild(containerVolume);
      const containerGameName =document.createElement('div');
-     containerIconsLeft.innerHTML = '<i class="fas fa-home fa-2x"></i><i class="fas fa-redo-alt fa-2x"></i><i class="fas fa-pause fa-2x"></i>';
+     containerGameName.className='container-name-game';
+     containerIconsLeft.innerHTML = '<i class="fas fa-home"></i><i id="redoAlt" class="fas fa-redo-alt"></i><i id="pause"class="fas fa-pause"></i>';
      /*const pausedIcon=document.createElement('i');
      pausedIcon.setAttribute('id','paused');
      pausedIcon.className="fas fa-pause fa-2x";*/
      //pausedIcon.addEventListener('click',pauseGame);
      //containerIconsLeft.appendChild(pausedIcon);
-     containerGameName.innerHTML ='<img class = "logo" src = "../img/mariobroslogo.png" width =30% ><br><img class ="nameGame" src= "../img/namegame.png" width =30%>';
+     containerGameName.innerHTML ='<img class = "logo" src = "../img/mariobroslogo.png" width =30% ><br><img class ="nameGame" src= "../img/namegame.png">';
      containerIcons.appendChild(containerIconsLeft);
      containerIcons.appendChild(containerIconsRight);
      headerGame.appendChild(containerIcons);

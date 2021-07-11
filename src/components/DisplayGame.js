@@ -1,4 +1,3 @@
-//import timer from "./Timer.js";
 
 const displayGame=()=>{
     const display=document.createElement('article');

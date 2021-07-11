@@ -1,21 +1,18 @@
 import match from "./Match.js";
 import resetGuesses from "./ResetGuesses.js";
-import shiftCount from "./Scoregame.js";
 
-let turn=1;
-const turnCards=()=>{
-  let flipp=shiftCount(turn);
-  turn++;
-  return flipp;
-}
+let turn=0;
+const countMatch=[];
+let matchGame=1;
+let score=0;
 
 const flippCards=()=>{
     const audio=document.querySelector('.audio');
     let count=0;
     let firstGuess = '';
     let secondGuess = '';
-     let previousTarget = null;
-     let delay = 400;
+    let previousTarget = null;
+    let delay = 400;
   
         function flippCards(event){
           let clicked=event.currentTarget;
@@ -34,7 +31,11 @@ const flippCards=()=>{
               firstGuess = clicked.dataset.name;
               clicked.classList.add('flipped');
             } else { 
-              document.getElementById('turn').innerHTML=turnCards();
+              turn++;
+              document.getElementById('turn').innerHTML=turn;
+              if (turn>6){
+                 score=score-10;
+              }
               secondGuess = clicked.dataset.name;
               clicked.classList.add('flipped');
             }
@@ -42,6 +43,9 @@ const flippCards=()=>{
             if (firstGuess && secondGuess) {
               if (firstGuess === secondGuess) {
                 setTimeout(match, delay);
+                score+=100;
+                document.getElementById('scoreGame').innerHTML=score;
+                countMatch.push(matchGame++);
                 audio.src='../sound/mario-bros-up.mp3';
                 audio.play();
               }
@@ -49,16 +53,18 @@ const flippCards=()=>{
               secondGuess = '';
               count = 0;
               previousTarget = null;
-               setTimeout(resetGuesses, delay);
+              setTimeout(resetGuesses, delay);
             }
             previousTarget = clicked;
           }
         }
   
         const setCards=document.querySelectorAll('.card');
-        setCards.forEach(card=>{
+        setCards.forEach(card =>{
             card.addEventListener('click',flippCards);
         });
+       
   }
   
   export default flippCards;
+  export {countMatch};

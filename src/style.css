@@ -1,16 +1,44 @@
 @import url(//db.onlinewebfonts.com/c/b2e75c336df191233b3096682c9ee6be?family=PixelarRegularW01-Regular);
-
-
-* {
-	margin: 0;
+*{
+    margin: 0;
 	padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    width: 70%;
+    /*background-image:url(../img/mariobroscover8.jpg);
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;*/
+    height: 150vh;
+}
+header{
+    width: 100%;
+    height: auto;
+    top:0;
+    left:0;
+}
+
+
+.containerGame{
+  background-color: rgb(235, 31, 31);
+  margin-left: 28%;
+  width: 100%;
+  padding-top: 10px;
+  margin-top: 10%;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(33, 117, 173, 0.9);
+  border-radius: 15px;
 }
 
 .displayGame{
-    width: 50%;
+    width: 100%;
     display: flex;
-    margin-left: 430px;
-    margin-top: 3%;
+    /*margin-left: 28%;*/
+    margin-top: 1%;
+    margin-bottom:2%;
     justify-content: space-between;
 }
 .displayTurn,
@@ -18,12 +46,11 @@
 .displayTime {
     justify-content: center;
     align-items: center;
-    color: black;
+    color: white;
     font-family: 'PixelarRegularW01-Regular';
-    font-size: 30px;
+    font-size: 1.4rem;
     font-weight: bold;
-  /*-webkit-text-stroke-width: 1px;
--webkit-text-border-color: black;*/
+    width:100%;
 }
 
 .displayLevel,.displayTurn,.displayTime p{
@@ -31,40 +58,50 @@
 }
 
 .paragraph{
-  color: black;
+  color:white;
 }
 .container-icons{
     display: flex;
-    margin-top: 1%;
+    margin-top: 15%;
     margin-left: 25%;
+    margin-bottom:10%;
     justify-content: space-between;
     width: 100%;
+    font-size: 1.2rem;
 }
 
 .container-icons-right{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .container-icons-right i {
     color: #dfba14;
     -webkit-text-stroke-width: 2px;
--webkit-text-stroke-color: black;
-cursor: pointer;
+    -webkit-text-stroke-color: black;
+    cursor: pointer;
 }
 
 .container-icons-right i:hover{
     color:blueviolet;
-    /*text-shadow: 5px 5px 5px  yellow;*/
 }
 
+.container-icons-left{
+    display: inline-block;
+    justify-content: center;
+}
 .container-icons-left i{
     padding-left: 10px;
+    cursor: pointer;
 }
 
 .container-icons-left i.fas.fa-home{
     color: #ED1B1B;
     -webkit-text-stroke-width: 3px;
--webkit-text-stroke-color: black;
+    -webkit-text-stroke-color: black;
+}
+
+.container-icons-left i.fas.fa-home:hover{
+    color:#2375EF;
 }
 
 .container-icons-left i.fas.fa-redo-alt{
@@ -73,43 +110,54 @@ cursor: pointer;
 -webkit-text-stroke-color: black;
 }
 
+.container-icons-left i.fas.fa-redo-alt:hover{
+    color: #ED1B1B;
+}
+
 .container-icons-left i.fas.fa-pause{
     color: #2375EF;
     -webkit-text-stroke-width: 3px;
 -webkit-text-stroke-color: black;
 }
 
+.container-icons-left i.fas.fa-pause:hover{
+    color: #dfba14;
+}
 
+.container-name-game{
+  justify-content: center;
+}
 
 .logo{
     margin-left: 65%;
-    width: 20%;
+    width: 25%;
 }
 
 .nameGame{
-    margin-left: 61%;
+    margin-left: 59%;
+    width: 40%;
 }
 
 
 .grid {
     /*display: inline-grid;*/
-    width: 50%;
+    width: 80%;
    /* grid-template-columns: repeat(4, 1fr);*/
-   border-radius: 15px;
+    border-radius: 15px;
     grid-gap: 20px;
     grid-column: 1;
-    margin-left: 46%;
+    margin-left: 10%;
+    align-items: center;
     margin-top: 0%;
-    margin-bottom: 2%;
+    margin-bottom: 10%;
     display: flex;
     flex-wrap: wrap;
-    background-color: rgba(33, 117, 173, 0.9);
+    /*background-color: rgba(33, 117, 173, 0.9);*/
     padding-left: 20px;
     padding-top:20px ;
     padding-bottom: 20px;
     padding-right: 20px;
-    /*justify-content: center;*/
-    justify-content: space-between
+    justify-content: space-between;
 
 
 }
@@ -118,7 +166,7 @@ cursor: pointer;
     transform-style: preserve-3d;
     transition: 0.3s cubic-bezier(0.0, -0.1, 0.265, 1.55);
     position: relative;
-    cursor:pointer;
+    cursor: pointer;
 }
 .card.flipped{
     transform: rotateY(180deg);
@@ -173,42 +221,25 @@ transition: 1s;*/
     width: 94px;
     height: 94px;
     border-radius: 15px;
-    display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 15px;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    /*flex-wrap: wrap;*/
 }
 .imageBackCard{
-    width: 90px;
-    height: 90px;
+    width: 94px;
+    height: 94px;
     justify-content: center;
     border-radius: 15px;
     border:4px solid black;
     
 }
-body{
-    width: 70%;
-    background-image:url("../img/mariobroscover8.jpg");
-    background-position:center;
-    background-size:cover;
-    background-repeat: no-repeat;
-    height: 110vh;
-}
-@media screen and (max-width: 375px) {
-    .body{
-        background-position:center;
-        height:100vh;
-    }
-    .grid{
-        width: 60%;
-        margin-left: 20%;
-        margin-top: 30%;
-    }
 
-  }
+
+
+
+
 
   .alert{
       color: red;
@@ -240,3 +271,174 @@ body{
      50% { opacity: 0.0; }
     100% { opacity: 1.0; }
   }
+
+.emergent{
+    background-color: rgb(58, 14, 161);
+    width: 100px;
+}
+
+.winLoseGame{
+	display: none;
+	background-color: rgba(0, 0, 0, 0.3);
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+}
+
+.showScore{
+
+    background-color: rgba(33, 117, 173, 0.9);
+    padding-left: 20px;
+    padding-top:20px ;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+    margin-left: 33%;
+    margin-top: 15%;
+    background-image: url("../img/mario-bros-fireworks.gif");
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    /*margin-bottom: 2%;*/
+    width: 35%;
+    height: 55%;
+	/*background-color: #fff;
+	width: 600px;
+	height: 200px;
+	max-width: 100%;
+	padding: 30px 50px;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	text-align: center;
+	position: absolute;
+	left: 26%;
+	top: 35%;*/
+}
+
+/*Iphone 6/7/8*/
+@media (min-width: 375px) and (min-height: 667px){
+    body{
+
+        background-image: url(../img/mario-bros-mobile.png);
+        background-position:center;
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
+    .container-icons{
+        width:320px;
+        margin-left:10%;
+    }
+    .container-icons i{
+        font-size: 1.5rem;
+    }
+    .displayTurn,
+    .displayLevel,
+    .displayTime {
+    font-size: 1.5rem;
+    }
+    .containerGame{
+        margin-left: 25%;
+    }
+    .grid{
+        justify-content:space-between;
+        padding: 10px 5px 30px 5px;
+        margin-left: 6px;
+        width:250px;
+    }
+    .frontCard{
+        width: 60px;
+        height: 60px;
+    }
+    .image{
+        width: 30px;
+        height: 40px;
+        margin: 5px 5px 10px 10px;
+    }
+    .backCard{
+        width: 64px;
+        height: 64px;
+    }
+    .imageBackCard{
+        width: 64px;
+        height: 64px; 
+    }
+
+    .logo{
+        margin-left: 120px;
+        width: 150px;
+    }
+    
+    .nameGame{
+        margin-left:89px;
+        width:232px;
+    }
+    
+
+}
+
+/*iPad*/
+@media (min-width: 768px) and (min-height: 1024px){
+    body{
+
+        background-image: url(../img/mario-bros-mobile.png);
+        background-position:center;
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
+    .container-icons{
+        margin-top: 20%;
+        width:650px;
+        margin-left:10%;
+    }
+    .container-icons i{
+        font-size: 3rem;
+    }
+    .displayTurn,
+    .displayLevel,
+    .displayTime {
+    font-size: 2.5rem;
+    }
+    .containerGame{
+        margin-left: 11%;
+        width: 650px;
+    }
+    .grid{
+        justify-content:space-between;
+        padding: 10px 5px 30px 10px;
+        margin-left: 26px;
+        width:600px;
+    }
+    .frontCard{
+        width: 150px;
+        height: 150px;
+    }
+    .image{
+        width: 120px;
+        height: 130px;
+        margin: 5px 5px 10px 10px;
+    }
+    .backCard{
+        width: 154px;
+        height: 154px;
+    }
+    .imageBackCard{
+        width: 154px;
+        height: 154px; 
+    }
+
+    .logo{
+        margin-left: 250px;
+        width: 300px;
+    }
+    
+    .nameGame{
+        margin-left:170px;
+        width:500px;
+    }
+    
+
+}
