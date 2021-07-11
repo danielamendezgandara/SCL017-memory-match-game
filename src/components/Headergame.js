@@ -1,7 +1,7 @@
 //import pauseGame from "./Pausegame.js";
 const createHeader = () => {
      let cont=0;
-
+ 
       const playSound=()=>{
 
             if(!volume.paused && !volume.ended)   { 

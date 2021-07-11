@@ -6,15 +6,38 @@
 	padding: 0;
 }
 
+.container-icons {
+    width:100% ;
+    justify-content: space-between;
+    display: flex;
+    margin-left: 250px;
+   /* margin-top: 10%;*/
+
+}
+.name-game{
+    width: 40%;
+    margin-left:550px;
+   /* justify-content: center;*/
+    align-items: center;
+}
+.nameg{
+    width: 90%;
+
+}
+.logo{
+    justify-content: center;
+    margin-left:50px ;
+}
 .grid {
     /*display: inline-grid;*/
-    width: 50%;
+    width: 60%;
+  
    /* grid-template-columns: repeat(4, 1fr);*/
    border-radius: 15px;
     grid-gap: 20px;
     grid-column: 1;
-    margin-left: 40%;
-    margin-top: 20%;
+    margin-left: 50%;
+    margin-top: 8%;
     margin-bottom: 2%;
     display: flex;
     flex-wrap: wrap;
@@ -84,12 +107,17 @@
     
 }
 body{
-    width: 80%;
+    width: 60%;
     background-image:url("../img/mariobroscover8.jpg");
     background-position:center;
     background-size:cover;
     background-repeat: no-repeat;
-    height: 90vh;
+    height: 100vh;
+}
+.footer{
+    margin-top: 8%;
+    margin-left: 80px;
+
 }
 @media screen and (max-width: 375px) {
     .body{
@@ -97,7 +125,7 @@ body{
         height:100vh;
     }
     .grid{
-        width: 60%;
+        width: 50%;
         margin-left: 20%;
         margin-top: 30%;
     }
