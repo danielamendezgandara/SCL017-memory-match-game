@@ -23,7 +23,6 @@
 .nameg{
     width: 90%;
 
-<<<<<<< HEAD
 }
 .logo{
     justify-content: center;
@@ -63,34 +62,6 @@
     transform: rotateY(180deg);
 }
 
-=======
-.container-grid {
-
-    width: 80%;
-    height: 90px;
-  
-    display: inline-grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10%;
-    grid-column: 1;
-    margin-left: 300px;
-    margin-top: 12%;
-    /*display: flex;
-    flex-flow:row wrap;
-    align-content: center;*/
-   
-}
-/*
-.container-box:hover.container-front-back{
-   transform: rotateY(180deg);
-}*/
-.container-front-back{
-  transform-style: preserve-3d;
- /*transform: rotateY(180deg);*/
-  transition: all 0.5s linear;
-}
-/*card.style.transform="rotateY(180deg)";*/
->>>>>>> 6e6d062448bde12ddb3da11bcc6da5164fed86b0
 
 .match{
    opacity: 0;
@@ -118,7 +89,6 @@
     margin: 10px 10px 15px 15px;
     filter: brightness(100%);
 }
-<<<<<<< HEAD
 .backCard{
     width: 94px;
     height: 94px;
@@ -126,23 +96,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-=======
-.container-backCard{
-    width: 90%;
-    height: 90px;
->>>>>>> 6e6d062448bde12ddb3da11bcc6da5164fed86b0
     border-radius: 15px;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     /*flex-wrap: wrap;*/
 }
-<<<<<<< HEAD
 .imageBackCard{
     width: 90px;
-=======
-.backCard{
-    width: 100%;
->>>>>>> 6e6d062448bde12ddb3da11bcc6da5164fed86b0
     height: 90px;
     justify-content: center;
     border-radius: 15px;
@@ -150,16 +110,11 @@
     
 }
 body{
-<<<<<<< HEAD
     width: 60%;
-=======
-    width: 80%;
->>>>>>> 6e6d062448bde12ddb3da11bcc6da5164fed86b0
     background-image:url("../img/mariobroscover8.jpg");
     background-position:center;
     background-size:cover;
     background-repeat: no-repeat;
-<<<<<<< HEAD
     height: 100vh;
 }
 .footer{
@@ -181,10 +136,3 @@ body{
   }
 
   
-=======
-    background-position: 
-    center;
-  
-   height: 100vh;
-}
->>>>>>> 6e6d062448bde12ddb3da11bcc6da5164fed86b0

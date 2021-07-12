@@ -11,19 +11,8 @@ import createFooter from './components/Footer.js';
   .then(resp => resp.json())
   .then(console.log)
   .catch(console.error);*/
-<<<<<<< HEAD
 document.getElementById('root').appendChild(createHeader());
 document.getElementById('root').appendChild(App (shuffle(setData(mariobros),6),mariobros));
 document.getElementById('root').appendChild(createFooter());
 clickCard();
 
-=======
-document.getElementById('root').appendChild(App (shuffle(setData(mariobros),6),mariobros));
-var cards=document.querySelectorAll(".container-front-back");
-for (let i = 0; i < cards.length; i++) {
-    cards[i].addEventListener('click',()=>{
-    console.log(cards[i].getAttribute('name'));
-  });
-  
-}
->>>>>>> 6e6d062448bde12ddb3da11bcc6da5164fed86b0

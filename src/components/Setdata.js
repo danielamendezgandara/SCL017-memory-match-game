@@ -13,14 +13,8 @@ const setData=(dataObject)=>{
         //console.log(objectItemsImage);
         //console.log(arraySrcImage);
     }
-<<<<<<< HEAD
 
 return arraySetImage;  
-=======
-    let setImage=arraySetImage.reduce((total, currentValue) => total.concat(currentValue), []);
-    console.log(setImage);
-return setImage;  
->>>>>>> 6e6d062448bde12ddb3da11bcc6da5164fed86b0
 
 };
 

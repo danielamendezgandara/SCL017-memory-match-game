@@ -17,7 +17,6 @@
 
 
 const App = (data,dataJS) => {
-<<<<<<< HEAD
   
 const  dataObject=Object.entries(dataJS);
 const  backCardObject=Object.values(dataObject[2]);
@@ -34,46 +33,6 @@ containerGame.appendChild(endGame);
 endGame.style.display="none";
 endGame.setAttribute('id','eGame');
 
-=======
-  let dataObject=Object.entries(dataJS);
-  let backCardObject=Object.values(dataObject[2]);
-    
-  // console.log(dataObject);
-  const container=document.createElement('section');
-  container.className='container-grid';
-  data.forEach((key,i)=>{   
-    var figura = key
-    var nombre = figura.split('/').pop().split('.')[0];
-    console.log(filename);
-    const containerBox =document.createElement('div');
-    const containerFrontBack=document.createElement('div');
-    containerFrontBack.className='container-front-back';
-    containerFrontBack.setAttribute('name',nombre);
-    const imageContainer=document.createElement('div');
-    const image=document.createElement('img');
-    imageContainer.className='container-image';
-    containerFrontBack.setAttribute('id',i);
-    image.className='image';
-    image.src=key;
-    const containerBackCard=document.createElement('div');
-    const backCard=document.createElement('img');
-    containerBackCard.className='container-backCard';
-    backCard.className='backCard';
-    backCard.src=backCardObject[1];
-    imageContainer.appendChild(image);
-    containerBackCard.appendChild(backCard);
-    containerFrontBack.appendChild(imageContainer);
-    containerFrontBack.appendChild(containerBackCard);
-    containerBox.appendChild(containerFrontBack);
-    container.appendChild(containerBox);
-    containerFrontBack.addEventListener('click',myFunction);//Remoción de atributo y dar nuevo atributo de tipo class
-    function myFunction(){
-      containerFrontBack.setAttribute('class','container-front-back');
-    }
-});
-  return container;
-};
->>>>>>> 6e6d062448bde12ddb3da11bcc6da5164fed86b0
 
 const endMsg=document.createElement('p');
 endMsg.className='endMsg';
