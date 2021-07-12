@@ -26,7 +26,7 @@
  
  “Que tenga sonido” - Ivana, 7 años.
  
- "Que la temática fuera de moda o atractiva".
+ "Que la temática fuera de modo atractiva".
  
  Diagrama
  
@@ -112,6 +112,6 @@
 
 ## 4. Test de Usabilidad
 
-Para realizar pruebas con usuari@s reales, le pedimos a dos niñas con edades de 7 y 9 respectivamente con edades que utilizaran la aplicación web, dandole como instrucción "utiliza esta página". Los resultados se muestran a continuación considerando tres criterios que se habian definido previamente para la observación.
+Para realizar pruebas con usuari@s reales, le pedimos a dos niñas con edades de 7 y 9 respectivamente  que utilizaran la aplicación web, dandole como instrucción "utiliza esta página". .
 
 
