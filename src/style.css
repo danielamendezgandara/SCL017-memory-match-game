@@ -5,6 +5,50 @@
 	margin: 0;
 	padding: 0;
 }
+.container-icons-left i{
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.container-icons-left i.fas.fa-redo-alt{
+    color: #139A11;
+    -webkit-text-stroke-width: 3px;
+-webkit-text-stroke-color: black;
+}
+
+.container-icons-left i.fas.fa-redo-alt:hover{
+    color: #ED1B1B;
+}
+
+.container-icons-left i.fas.fa-pause{
+    color: #2375EF;
+    -webkit-text-stroke-width: 3px;
+-webkit-text-stroke-color: black;
+}
+
+.container-icons-left i.fas.fa-pause:hover{
+    color: #dfba14;
+}
+
+.container-icons-right i {
+    color: #dfba14;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    cursor: pointer;
+}
+
+.container-icons-right i:hover{
+    color:blueviolet;
+}
+.container-icons-left i.fas.fa-home{
+    color: #ED1B1B;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+}
+
+.container-icons-left i.fas.fa-home:hover{
+    color:#2375EF;
+}
 
 .container-icons {
     width:100% ;
@@ -115,17 +159,13 @@ body{
     background-position:center;
     background-size:cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 110vh;
 }
 .endaGame{
     width: 50%;
     margin-top:50% ;
     margin-left: 400px;
-    background-color: rgba(33, 117, 173, 0.9);
-    padding-left: 20px;
-    padding-top:20px ;
-    padding-bottom: 20px;
-    padding-right: 20px;
+  
 }
 .endMsg{
     font-family: 'Play', sans-serif;
@@ -151,9 +191,10 @@ body{
     left: 35%;
 }
 .footer{
-    margin-top: 10%;
-    margin-left: 600px;
-
+    margin-top: 12%;
+    margin-left: 550px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
 }
 @media screen and (max-width: 375px) {
     .body{

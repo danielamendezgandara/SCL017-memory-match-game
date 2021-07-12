@@ -44,10 +44,11 @@ function flippCards(event){
           if (matchGame===6){
             document.getElementById('cCards').style.display="none";
             document.getElementById('eGame').style.display="block";
+            document.getElementById('footer').style.display="none";
           }
 
-         /* audio.src='../sound/mario-bros-life.mp3';
-          audio.play();*/
+          //audio.src='../sound/mario-bros-life.mp3';
+         // audio.play();
         }
         firstGuess = '';
         secondGuess = '';
