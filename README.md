@@ -30,7 +30,7 @@
  
  Diagrama
  
- <img src="ImgReadme/diagrama.png" width= "3000px" height="400px">
+ <img src="ImgReadme\diagrama.png" >
 
 
 
