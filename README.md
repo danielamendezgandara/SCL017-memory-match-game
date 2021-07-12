@@ -30,7 +30,7 @@
  
  Diagrama
  
- <img src="ImgReadme\diagrama.png" >
+ <img src="/ImgReadme/diagrama.PNG" >
 
 
 
