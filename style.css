@@ -143,7 +143,6 @@
     border-radius: 15px;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    /*flex-wrap: wrap;*/
 }
 .imageBackCard{
     width: 90px;
@@ -155,7 +154,7 @@
 }
 body{
     width: 60%;
-    background-image:url("../img/mariobroscover8.jpg");
+    background-image:url("./img/mariobroscover8.jpg");
     background-position:center;
     background-size:cover;
     background-repeat: no-repeat;
