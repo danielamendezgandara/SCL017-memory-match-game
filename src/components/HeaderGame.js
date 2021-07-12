@@ -56,19 +56,10 @@ const createHeader = () => {
      volume.play();
      containerVolume.appendChild(volume);
      containerIconsRight.appendChild(containerVolume);
-     const containerGameName =document.createElement('div');
-     containerGameName.className='container-name-game';
      containerIconsLeft.innerHTML = '<i class="fas fa-home"></i><i id="redoAlt" class="fas fa-redo-alt"></i><i id="pause"class="fas fa-pause"></i>';
-     /*const pausedIcon=document.createElement('i');
-     pausedIcon.setAttribute('id','paused');
-     pausedIcon.className="fas fa-pause fa-2x";*/
-     //pausedIcon.addEventListener('click',pauseGame);
-     //containerIconsLeft.appendChild(pausedIcon);
-     containerGameName.innerHTML ='<img class = "logo" src = "../img/mariobroslogo.png" width =30% ><br><img class ="nameGame" src= "../img/namegame.png">';
      containerIcons.appendChild(containerIconsLeft);
      containerIcons.appendChild(containerIconsRight);
      headerGame.appendChild(containerIcons);
-     headerGame.appendChild(containerGameName);
      containerIconsRight.addEventListener('click',playSound);
      
     

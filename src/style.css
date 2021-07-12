@@ -7,10 +7,11 @@
 
 body{
     width: 70%;
-    /*background-image:url(../img/mariobroscover8.jpg);
+    /*background-image:url(../img/mariobroscover8.jpg);*/
+    background-image:url(../img/backgroundmariobros.jpg);
     background-position:center;
     background-size:cover;
-    background-repeat: no-repeat;*/
+    background-repeat: no-repeat;
     height: 150vh;
 }
 header{
@@ -20,14 +21,22 @@ header{
     left:0;
 }
 
+.containerGameBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
 
 .containerGame{
-  background-color: rgb(235, 31, 31);
-  margin-left: 28%;
-  width: 100%;
-  padding-top: 10px;
-  margin-top: 10%;
-  align-items: center;
+  margin-left: 45%;
+  min-width: 400px;
+  min-height:60vh;
+  max-height: 100vh;
+  max-width:700px;
+  padding-top: 5px;
+  margin-top: 5%;
   justify-content: center;
   background-color: rgba(33, 117, 173, 0.9);
   border-radius: 15px;
@@ -36,21 +45,21 @@ header{
 .displayGame{
     width: 100%;
     display: flex;
-    /*margin-left: 28%;*/
+    margin-left: 0%;
     margin-top: 1%;
     margin-bottom:2%;
-    justify-content: space-between;
+    justify-content:center;
 }
 .displayTurn,
 .displayLevel,
 .displayTime {
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     color: white;
     font-family: 'PixelarRegularW01-Regular';
-    font-size: 1.4rem;
+    font-size: 2rem;
     font-weight: bold;
-    width:100%;
+    width:30%;
 }
 
 .displayLevel,.displayTurn,.displayTime p{
@@ -62,12 +71,12 @@ header{
 }
 .container-icons{
     display: flex;
-    margin-top: 15%;
-    margin-left: 25%;
-    margin-bottom:10%;
+    margin-top: 2%;
+    margin-left: 8%;
+    margin-bottom:1%;
     justify-content: space-between;
-    width: 100%;
-    font-size: 1.2rem;
+    width: 125%;
+    font-size: 1.8rem;
 }
 
 .container-icons-right{
@@ -125,39 +134,41 @@ header{
 }
 
 .container-name-game{
+  display: flex;
   justify-content: center;
+  flex-direction:column;
 }
 
 .logo{
-    margin-left: 65%;
-    width: 25%;
+    margin-left:58%;
+    width:30%;
+
 }
 
 .nameGame{
-    margin-left: 59%;
-    width: 40%;
+    margin-left: 50%;
+    /*width: 400px;*/
+    width: 50%;
+    /*min-width:26%;
+    max-width:30%;*/
 }
 
 
 .grid {
-    /*display: inline-grid;*/
-    width: 80%;
-   /* grid-template-columns: repeat(4, 1fr);*/
+    max-width: 500px;
     border-radius: 15px;
     grid-gap: 20px;
-    grid-column: 1;
-    margin-left: 10%;
-    align-items: center;
+    grid-column:1;
+    align-items:center;
+    justify-content:space-between;
     margin-top: 0%;
     margin-bottom: 10%;
     display: flex;
     flex-wrap: wrap;
-    /*background-color: rgba(33, 117, 173, 0.9);*/
     padding-left: 20px;
     padding-top:20px ;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     padding-right: 20px;
-    justify-content: space-between;
 
 
 }
@@ -329,8 +340,9 @@ transition: 1s;*/
         background-repeat: no-repeat;
     }
     .container-icons{
-        width:320px;
-        margin-left:10%;
+        margin-top:10%;
+        width:350px;
+        margin-left:5%;
     }
     .container-icons i{
         font-size: 1.5rem;
@@ -368,7 +380,7 @@ transition: 1s;*/
     }
 
     .logo{
-        margin-left: 120px;
+        margin-left: 180px;
         width: 150px;
     }
     

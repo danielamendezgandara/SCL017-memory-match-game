@@ -19,8 +19,13 @@ const App = (data,dataJS) => {
 
   const  dataObject=Object.entries(dataJS);
   const  backCardObject=Object.values(dataObject[2]);
+  const containerGameBox=document.createElement('section');
+  containerGameBox.className='containerGameBox';
   const  containerGame=document.createElement('section');
   containerGame.className='containerGame';
+  const containerGameName =document.createElement('div');
+  containerGameName.className='container-name-game';
+  containerGameName.innerHTML ='<div class="containerlogo"><img class = "logo" src = "../img/mariobroslogo.png"></div><div class="containerName"><img class ="nameGame" src= "../img/namegame.png"></div>';
   const containerCards=document.createElement('section');
   containerCards.className='grid';
 
@@ -50,7 +55,9 @@ const App = (data,dataJS) => {
 }); 
   containerGame.appendChild(displayGame());
   containerGame.appendChild(containerCards);
-  return containerGame;
+  containerGameBox.appendChild(containerGameName);
+  containerGameBox.appendChild(containerGame);
+  return containerGameBox;
 };
 
 
