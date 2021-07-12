@@ -89,7 +89,7 @@
 
   ### 3.1 Prototipo de Baja Fidelidad
 
-  <img src="ImgReadme/bajafidelidad.png" width= "300px" height="400px">
+  <img src="/ImgReadme/bajafidelidad.png">
   
   
    ### FEEDBACK
@@ -103,9 +103,9 @@
    ### 3.2. Prototipo de Alta Fidelidad
   Partiendo de ambos modelos desarrollados, se obtuvo el siguiente esquema, que muestra el funcionamiento de la app.
   
-   <img src="ImgReadme/responsivepc.png" width= "350px" height="400px">
-   <img src="ImgReadme/Iphone.png" width= "350px" height="400px">
-   <img src="ImgReadme/Iphone2.png" width= "350px" height="400px">
+   <img src="/ImgReadme/responsivepc.PNG">
+   <img src="/ImgReadme/responsiveIphone.PNG">
+   <img src="/ImgReadme/responsiveIphone2.PNG">
 
  
   
@@ -114,4 +114,4 @@
 
 Para realizar pruebas con usuari@s reales, le pedimos a dos niñas con edades de 7 y 9 respectivamente con edades que utilizaran la aplicación web, dandole como instrucción "utiliza esta página". Los resultados se muestran a continuación considerando tres criterios que se habian definido previamente para la observación.
 
-<img src="./Readme/testUsabilidad.jpg" width= "500px" height="300px">
+
