@@ -36,7 +36,7 @@ endGame.setAttribute('id','eGame');
 
 const endMsg=document.createElement('p');
 endMsg.className='endMsg';
-endMsg.textContent="Lo Lograste";
+endMsg.textContent="Lo Lograste, Felicidades!!!";
 endGame.appendChild(endMsg);
 
 const marioEndGame=document.createElement("img");

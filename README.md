@@ -30,7 +30,7 @@
  
  Diagrama
  
- <img src=""../img/diagrama.png" width= "400px" height="400px">
+ <img src="ImgReadme/diagrama.png" width= "400px" height="400px">
 
 
 
@@ -89,7 +89,7 @@
 
   ### 3.1 Prototipo de Baja Fidelidad
 
-  <img src=""../img/bajafidelidad.png" width= "400px" height="400px">
+  <img src="ImgReadme/bajafidelidad.png" width= "400px" height="400px">
   
   
    ### FEEDBACK
@@ -103,7 +103,9 @@
    ### 3.2. Prototipo de Alta Fidelidad
   Partiendo de ambos modelos desarrollados, se obtuvo el siguiente esquema, que muestra el funcionamiento de la app.
   
-   <img src=""../img/altafidelidad.png" width= "400px" height="400px">
+   <img src="ImgReadme/responsivepc.png" width= "400px" height="400px">
+   <img src="ImgReadme/Iphone.png" width= "400px" height="400px">
+   <img src="ImgReadme/Iphone2.png" width= "400px" height="400px">
 
  
   

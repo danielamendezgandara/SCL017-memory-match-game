@@ -117,9 +117,42 @@ body{
     background-repeat: no-repeat;
     height: 100vh;
 }
+.endaGame{
+    width: 50%;
+    margin-top:50% ;
+    margin-left: 400px;
+    background-color: rgba(33, 117, 173, 0.9);
+    padding-left: 20px;
+    padding-top:20px ;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+.endMsg{
+    font-family: 'Play', sans-serif;
+    color: black;
+    font-size: 300%;
+    font-weight:900;
+    text-align: center;
+    
+    white-space: pre-line;
+    background-color: white;
+    border: 5px solid;
+    position: absolute;
+    width: 65%;
+    height: 20%;
+    top: 78%;
+    left: 15%;
+}
+.marioEndGame{
+    width: 35%;
+    height: 45%;
+    position: absolute;
+    top: 28%;
+    left: 35%;
+}
 .footer{
-    margin-top: 8%;
-    margin-left: 80px;
+    margin-top: 10%;
+    margin-left: 600px;
 
 }
 @media screen and (max-width: 375px) {
