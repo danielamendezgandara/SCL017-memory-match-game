@@ -55,13 +55,10 @@
     justify-content: space-between;
     display: flex;
     margin-left: 250px;
-   /* margin-top: 10%;*/
-
 }
 .name-game{
     width: 40%;
     margin-left:550px;
-   /* justify-content: center;*/
     align-items: center;
 }
 .nameg{
@@ -73,15 +70,12 @@
     margin-left:50px ;
 }
 .grid {
-    /*display: inline-grid;*/
     width: 60%;
-  
-   /* grid-template-columns: repeat(4, 1fr);*/
-   border-radius: 15px;
+    border-radius: 15px;
     grid-gap: 20px;
     grid-column: 1;
-    margin-left: 50%;
-    margin-top: 8%;
+    margin-left: 55%;
+    margin-top: 5%;
     margin-bottom: 2%;
     display: flex;
     flex-wrap: wrap;
@@ -90,10 +84,7 @@
     padding-top:20px ;
     padding-bottom: 20px;
     padding-right: 20px;
-    /*justify-content: center;*/
     justify-content: space-between
-
-
 }
 
 .card{
@@ -105,7 +96,6 @@
 .card.flipped{
     transform: rotateY(180deg);
 }
-
 
 .match{
    opacity: 0;
@@ -143,7 +133,6 @@
     border-radius: 15px;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    /*flex-wrap: wrap;*/
 }
 .imageBackCard{
     width: 90px;
@@ -191,8 +180,8 @@ body{
     left: 35%;
 }
 .footer{
-    margin-top: 12%;
-    margin-left: 550px;
+    margin-top: 10%;
+    margin-left: 500px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
 }

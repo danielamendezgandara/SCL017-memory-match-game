@@ -56,7 +56,6 @@ data.forEach(([id,image])=>{
   const audio=document.createElement('audio');
   audio.src='../sound/mario-bros-jump.mp3';
   frontCard.className='frontCard';
- // card.setAttribute('id',index.toString());
   imageFrontCard.className='image';
   imageFrontCard.src=image;
   const backCard=document.createElement('div');

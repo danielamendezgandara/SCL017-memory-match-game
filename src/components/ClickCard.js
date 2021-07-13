@@ -16,8 +16,6 @@ const clickCard=()=>{
 
 
 function flippCards(event){
-
-    //audio.play();
     let clicked=event.currentTarget;
     
     if (clicked === previousTarget ||
@@ -46,9 +44,6 @@ function flippCards(event){
             document.getElementById('eGame').style.display="block";
             document.getElementById('footer').style.display="none";
           }
-
-          //audio.src='../sound/mario-bros-life.mp3';
-         // audio.play();
         }
         firstGuess = '';
         secondGuess = '';

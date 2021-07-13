@@ -5,14 +5,11 @@ import shuffle from './components/Shufflecards.js';
 import createHeader from './components/Header.js';
 import clickCard from './components/ClickCard.js';
 import createFooter from './components/Footer.js';
-//import displayGame from './components/DisplayGame.js';
-//import matchGame from './components/Matchgame.js';
-/*fetch('./data/pokemon/pokemon.json')
-  .then(resp => resp.json())
-  .then(console.log)
-  .catch(console.error);*/
+
+let dataset=setData(mariobros);
+let ramdomset=shuffle(dataset,6);
 document.getElementById('root').appendChild(createHeader());
-document.getElementById('root').appendChild(App (shuffle(setData(mariobros),6),mariobros));
+document.getElementById('root').appendChild(App (ramdomset,mariobros));
 document.getElementById('root').appendChild(createFooter());
 clickCard();
 
