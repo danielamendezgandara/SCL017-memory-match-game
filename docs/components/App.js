@@ -41,7 +41,7 @@ endGame.appendChild(endMsg);
 
 const marioEndGame=document.createElement("img");
 marioEndGame.className='marioEndGame';
-marioEndGame.src='../img/MarioFinal.gif';
+marioEndGame.src='./img/MarioFinal.gif';
 endGame.appendChild(marioEndGame);
 
 
@@ -53,10 +53,7 @@ data.forEach(([id,image])=>{
   card.dataset.name = id;
   const frontCard=document.createElement('div');
   const imageFrontCard=document.createElement('img');
-  const audio=document.createElement('audio');
-  audio.src='../sound/mario-bros-jump.mp3';
   frontCard.className='frontCard';
- // card.setAttribute('id',index.toString());
   imageFrontCard.className='image';
   imageFrontCard.src=image;
   const backCard=document.createElement('div');
