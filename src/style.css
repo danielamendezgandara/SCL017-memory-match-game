@@ -32,7 +32,7 @@ header{
 .containerGame{
   margin-left: 45%;
   min-width: 400px;
-  min-height:40vh;
+  /*min-height:40vh;*/
   max-height: 110vh;
   max-width:700px;
   padding-top: 5px;
@@ -141,17 +141,15 @@ header{
 }
 
 .logo{
-    margin-left:58%;
-    width:30%;
+    margin-left:50%;
+    width:45%;
+    max-width:46%;
 
 }
 
 .nameGame{
-    margin-left: 50%;
-    /*width: 400px;*/
-    width: 50%;
-    /*min-width:26%;
-    max-width:30%;*/
+    margin-left: 35%;
+    width:90%;
 }
 
 
@@ -227,7 +225,7 @@ header{
 }
   .alert{
       color: red;
-      animation-name: parpadeo;
+      animation-name: blinking;
       animation-duration: 1s;
       animation-timing-function: linear;
       animation-iteration-count: infinite;
@@ -238,19 +236,19 @@ header{
       -webkit-animation-iteration-count: infinite;
   }
   
-  @-moz-keyframes parpadeo{  
+  @-moz-keyframes blinking{  
     0% { opacity: 1.0; }
     50% { opacity: 0.0; }
     100% { opacity: 1.0; }
   }
   
-  @-webkit-keyframes parpadeo {  
+  @-webkit-keyframes blinking {  
     0% { opacity: 1.0; }
     50% { opacity: 0.0; }
      100% { opacity: 1.0; }
   }
   
-  @keyframes parpadeo {  
+  @keyframes blinking {  
     0% { opacity: 1.0; }
      50% { opacity: 0.0; }
     100% { opacity: 1.0; }
@@ -303,90 +301,54 @@ header{
 	top: 35%;*/
 }
 
+/*Con capacidad de respuesta*/
 
-
-/*Galaxy Fold*/
-
-@media (min-width: 280px) and (min-height: 653px){
+@media (min-width: 1280px) and (min-height: 580px){
     body{
-
-        background-image: url(../img/mario-bros-mobile.png);
+        width: 70%;
+        background-image: url(../img/mariobroscover8.jpg);
         background-position:center;
         background-size:cover;
         background-repeat: no-repeat;
+        height: 100vh;
+        overflow-y: hidden;
     }
     .container-icons{
-        margin-top:10%;
-        width:260px;
-        margin-left:5%;
+        margin-top: 1%;
     }
-    .container-icons i{
-        font-size: 1.5rem;
-    }
-    .container-icons-left i{
-        padding-left: 5px;
-    }
-    .displayGame{
-    width:255px;
-    margin-left: 5px;
-  }
-    .displayTurn,
-    .displayLevel,
-    .displayTime {
-    font-size: 1.5rem;
-    width:50%;
-    justify-content:center;
-    }
-    .containerGame{
-        margin-left: 90px;
-        min-width: 250px;
-        
-    }
-    .grid{
-        justify-content:space-between;
-        padding: 5px 5px 5px 5px;
-        margin-left:3px;
-        width:245px;
-    }
-    .frontCard{
-        width: 60px;
-        height: 60px;
-    }
-    .image{
-        width: 30px;
-        height: 40px;
-        margin: 5px 5px 10px 10px;
-    }
-    .backCard{
-        width: 64px;
-        height: 64px;
-    }
-    .imageBackCard{
-        width: 64px;
-        height: 64px; 
-    }
- 
     .container-name-game{
-        margin-top: 10%;
-        margin-bottom:5%;
+        margin-top:0%;
       }
+      
     .logo{
-        margin-left: 170px;
-        width: 150px;
+        margin-left: 480px;
+        width: 180px;
     }
     
     .nameGame{
-        margin-left:120px;
-        width:255px;
+        margin-left:430px;
+        width:320px;
     }
-    
 
+    .containerGame{
+        margin-top: 1%;
+        height:410px;
+    }
+    .displayGame{
+        margin-bottom:0%;
+    }
+    .displayTurn,
+    .displayLevel,
+    .displayTime {
+    font-size: 2rem;
+    }
+    .grid{
+       margin-top: 0%;
+       grid-gap:10px; 
+    }
 }
-
-
-/*iPhone 5/SE*/
-
-@media (min-width: 320px) and (min-height: 568px){
+/*iPad*/
+/*@media (width: 768px) and (height: 1024px){
     body{
 
         background-image: url(../img/mario-bros-mobile.png);
@@ -395,154 +357,150 @@ header{
         background-repeat: no-repeat;
     }
     .container-icons{
-        margin-top:5%;
-        width:300px;
-        margin-left:3%;
+        margin-top: 10%;
+        width:655px;
+        margin-left:10%;
     }
     .container-icons i{
-        font-size: 1.5rem;
-    }
-    .container-icons-left i{
+        font-size: 3rem;
         padding-left: 5px;
     }
     .displayGame{
-    width:245px;
-    margin-left: 10px;
-  }
+        width: 600px;
+        margin-left:25px;
+    }
     .displayTurn,
     .displayLevel,
     .displayTime {
-    font-size: 1.5rem;
-    width:50%;
-    justify-content:center;
+    font-size: 3rem;
+    justify-content:right;
+    width:80%;
     }
     .containerGame{
         margin-top: 5%;
-        margin-left: 100px;
-        min-width: 260px;
-        
+        margin-left: 245px;
+        min-width: 650px;
     }
     .grid{
         justify-content:space-between;
-        padding: 5px 5px 5px 5px;
-        margin-left:5px;
-        grid-gap: 10px;
-        width:250px;
+        padding: 10px 5px 30px 10px;
+        margin-top: 5%;
+        grid-gap:30px;
+        margin-left: 22px;
+        min-width:600px;
     }
     .frontCard{
-        width: 60px;
-        height: 60px;
+        width: 150px;
+        height: 150px;
     }
     .image{
-        width: 30px;
-        height: 40px;
+        width: 120px;
+        height: 130px;
         margin: 5px 5px 10px 10px;
     }
     .backCard{
-        width: 64px;
-        height: 64px;
+        width: 154px;
+        height: 154px;
     }
     .imageBackCard{
-        width: 64px;
-        height: 64px; 
+        width: 154px;
+        height: 154px; 
     }
- 
+
     .container-name-game{
-        margin-bottom:5%;
+        margin-top: 10%;
       }
+      
+
     .logo{
-        margin-left: 180px;
-        width: 150px;
+        margin-left: 400px;
+        width: 300px;
     }
     
     .nameGame{
-        margin-left:130px;
-        width:255px;
+        margin-left:300px;
+        width:550px;
     }
     
+}*/
 
+/*Surface Duo*/
+/*@media (min-width: 540px) and (min-height: 720px){
+    
+body{
+    width: 70%;
+    background-image:url(../img/backgroundmariobros.jpg);
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 200vh;
 }
-
-
-
-/*Moto G4/Galaxy S5*/
-
-@media (min-width: 360px) and (min-height: 640px){
-    body{
-
-        background-image: url(../img/mario-bros-mobile.png);
-        background-position:center;
-        background-size:cover;
-        background-repeat: no-repeat;
-    }
     .container-icons{
-        margin-top:10%;
-        width:340px;
-        margin-left:3%;
+        margin-top: 10%;
+        width:550px;
+        margin-left:10%;
     }
     .container-icons i{
-        font-size: 1.5rem;
-    }
-    .container-icons-left i{
+        font-size: 3rem;
         padding-left: 5px;
     }
     .displayGame{
-    width:255px;
-    margin-left: 15px;
-  }
+        width: 550px;
+        margin-left:10px;
+    }
     .displayTurn,
     .displayLevel,
     .displayTime {
-    font-size: 1.5rem;
-    width:50%;
-    justify-content:center;
+    font-size: 3rem;
+    justify-content:right;
+    width:80%;
     }
     .containerGame{
-        margin-left: 110px;
-        min-width: 280px;
-        
+        margin-top: 5%;
+        margin-left: 240px;
+        min-width: 550px;
     }
     .grid{
         justify-content:space-between;
-        padding: 5px 5px 5px 5px;
-        margin-left:15px;
-        width:250px;
+        padding: 10px 5px 30px 10px;
+        margin-top: 5%;
+        margin-left: 22px;
+        min-width:500px;
     }
     .frontCard{
-        width: 60px;
-        height: 60px;
+        width: 120px;
+        height: 120px;
     }
     .image{
-        width: 30px;
-        height: 40px;
+        width: 90px;
+        height: 100px;
         margin: 5px 5px 10px 10px;
     }
     .backCard{
-        width: 64px;
-        height: 64px;
+        width: 124px;
+        height: 124px;
     }
     .imageBackCard{
-        width: 64px;
-        height: 64px; 
+        width: 124px;
+        height: 124px; 
     }
- 
+
     .container-name-game{
         margin-top: 10%;
-        margin-bottom:5%;
       }
+      
+
     .logo{
-        margin-left: 180px;
-        width: 150px;
+        margin-left: 420px;
+        width: 300px;
     }
     
     .nameGame{
-        margin-left:130px;
-        width:255px;
+        margin-left:300px;
+        width:550px;
     }
     
-
-}
-
+}*/
 
 /*Iphone 6/7/8*/
 @media (min-width: 375px) and (min-height: 667px){
@@ -623,7 +581,7 @@ header{
 }
 
 /*Iphone X*/
-@media (min-width: 375px) and (min-height: 812px){
+/*@media (min-width: 375px) and (min-height: 812px){
     .container-icons{
         margin-top:15%;
         width:300px;
@@ -679,135 +637,16 @@ header{
     }
     
 
-}
-
-/*Surface Duo*/
-@media (min-width: 540px) and (min-height: 720px){
-    
-body{
-    width: 70%;
-    background-image:url(../img/backgroundmariobros.jpg);
-    background-position:center;
-    background-size:cover;
-    background-repeat: no-repeat;
-    height: 200vh;
-}
-    .container-icons{
-        margin-top: 10%;
-        width:550px;
-        margin-left:10%;
-    }
-    .container-icons i{
-        font-size: 3rem;
-        padding-left: 5px;
-    }
-    .displayGame{
-        width: 550px;
-        margin-left:10px;
-    }
-    .displayTurn,
-    .displayLevel,
-    .displayTime {
-    font-size: 3rem;
-    justify-content:right;
-    width:80%;
-    }
-    .containerGame{
-        margin-top: 5%;
-        margin-left: 240px;
-        min-width: 550px;
-    }
-    .grid{
-        justify-content:space-between;
-        padding: 10px 5px 30px 10px;
-        margin-top: 5%;
-        margin-left: 22px;
-        min-width:500px;
-    }
-    .frontCard{
-        width: 120px;
-        height: 120px;
-    }
-    .image{
-        width: 90px;
-        height: 100px;
-        margin: 5px 5px 10px 10px;
-    }
-    .backCard{
-        width: 124px;
-        height: 124px;
-    }
-    .imageBackCard{
-        width: 124px;
-        height: 124px; 
-    }
-
-    .container-name-game{
-        margin-top: 10%;
-      }
-      
-
-    .logo{
-        margin-left: 420px;
-        width: 300px;
-    }
-    
-    .nameGame{
-        margin-left:300px;
-        width:550px;
-    }
-    
-}
-
-/*Microsoft Lumia 550*/
-@media (min-width: 640px) and (min-height:360px){
-    body{
-        background-image:url(../img/mariobroscover8.jpg);
-    }
-    .containerGame{
-        margin-top: 1%;
-        margin-left: 200px;
-        min-width: 450px;
-        min-height: 40vh;
-    }
-    .displayTurn,
-    .displayLevel,
-    .displayTime {
-    font-size: 2rem;
-    }
-    .grid{
-        justify-content:space-between;
-        padding: 10px 5px 30px 10px;
-        margin-top: 1%;
-        margin-left: 2px;
-        grid-gap:5px;
-        min-width:300px;
-    }
-    .frontCard{
-        width: 80px;
-        height: 80px;
-    }
-    .image{
-        width: 50px;
-        height: 60px;
-    }
-    .backCard{
-        width: 84px;
-        height: 84px;
-    }
-    .imageBackCard{
-        width: 84px;
-        height: 84px; 
-    }
-
-    .container-name-game{
-        margin-top: 0%;
-      }
-}
+}*/
 
 
-/*iPad*/
-@media (min-width: 768px) and (min-height: 1024px){
+
+
+
+
+/*iPhone 5/SE*/
+
+/*@media (min-width: 320px) and (min-height: 568px){
     body{
 
         background-image: url(../img/mario-bros-mobile.png);
@@ -816,77 +655,152 @@ body{
         background-repeat: no-repeat;
     }
     .container-icons{
-        margin-top: 10%;
-        width:655px;
-        margin-left:10%;
+        margin-top:5%;
+        width:300px;
+        margin-left:3%;
     }
     .container-icons i{
-        font-size: 3rem;
+        font-size: 1.5rem;
+    }
+    .container-icons-left i{
         padding-left: 5px;
     }
     .displayGame{
-        width: 600px;
-        margin-left:25px;
-    }
+    width:245px;
+    margin-left: 10px;
+  }
     .displayTurn,
     .displayLevel,
     .displayTime {
-    font-size: 3rem;
-    justify-content:right;
-    width:80%;
+    font-size: 1.5rem;
+    width:50%;
+    justify-content:center;
     }
     .containerGame{
         margin-top: 5%;
-        margin-left: 245px;
-        min-width: 650px;
+        margin-left: 100px;
+        min-width: 260px;
+        
     }
     .grid{
         justify-content:space-between;
-        padding: 10px 5px 30px 10px;
-        margin-top: 5%;
-        grid-gap:30px;
-        margin-left: 22px;
-        min-width:600px;
+        padding: 5px 5px 5px 5px;
+        margin-left:5px;
+        grid-gap: 10px;
+        width:250px;
     }
     .frontCard{
-        width: 150px;
-        height: 150px;
+        width: 60px;
+        height: 60px;
     }
     .image{
-        width: 120px;
-        height: 130px;
+        width: 30px;
+        height: 40px;
         margin: 5px 5px 10px 10px;
     }
     .backCard{
-        width: 154px;
-        height: 154px;
+        width: 64px;
+        height: 64px;
     }
     .imageBackCard{
-        width: 154px;
-        height: 154px; 
+        width: 64px;
+        height: 64px; 
     }
-
+ 
     .container-name-game{
-        margin-top: 10%;
+        margin-bottom:5%;
       }
-      
-
     .logo{
-        margin-left: 400px;
-        width: 300px;
+        margin-left: 180px;
+        width: 150px;
     }
     
     .nameGame{
-        margin-left:300px;
-        width:550px;
+        margin-left:130px;
+        width:255px;
+    }
+    
+
+}*/
+
+
+
+/*Moto G4/Galaxy S5*/
+
+@media (min-width: 360px) and (min-height: 640px){
+    body{
+
+        background-image: url(../img/mario-bros-mobile.png);
+        background-position:center;
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
+    .container-icons{
+        margin-top:10%;
+        width:340px;
+        margin-left:3%;
+    }
+    .container-icons i{
+        font-size: 1.5rem;
+    }
+    .container-icons-left i{
+        padding-left: 5px;
+    }
+    .displayGame{
+    width:255px;
+    margin-left: 15px;
+  }
+    .displayTurn,
+    .displayLevel,
+    .displayTime {
+    font-size: 1.5rem;
+    width:50%;
+    justify-content:center;
+    }
+    .containerGame{
+        margin-left: 110px;
+        min-width: 280px;
+        
+    }
+    .grid{
+        justify-content:space-between;
+        padding: 5px 5px 5px 5px;
+        margin-left:15px;
+        width:250px;
+    }
+    .frontCard{
+        width: 60px;
+        height: 60px;
+    }
+    .image{
+        width: 30px;
+        height: 40px;
+        margin: 5px 5px 10px 10px;
+    }
+    .backCard{
+        width: 64px;
+        height: 64px;
+    }
+    .imageBackCard{
+        width: 64px;
+        height: 64px; 
+    }
+ 
+    .container-name-game{
+        margin-top: 10%;
+        margin-bottom:5%;
+      }
+    .logo{
+        margin-left: 180px;
+        width: 150px;
+    }
+    
+    .nameGame{
+        margin-left:130px;
+        width:255px;
     }
     
 }
-
-
-
-
-
 
 /*Galaxy Fold*/
 
@@ -928,7 +842,7 @@ body{
     .grid{
         justify-content:space-between;
         padding: 5px 5px 5px 5px;
-        margin-left:5px;
+        margin-left:3px;
         width:245px;
     }
     .frontCard{
@@ -965,3 +879,9 @@ body{
     
 
 }*/
+
+
+
+
+
+
