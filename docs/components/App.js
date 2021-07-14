@@ -65,7 +65,6 @@ data.forEach(([id,image])=>{
   backCard.appendChild(imageBackCard);
   card.appendChild(frontCard);
   card.appendChild(backCard);
-  card.appendChild(audio);
   containerCards.appendChild(card);
  
   });
