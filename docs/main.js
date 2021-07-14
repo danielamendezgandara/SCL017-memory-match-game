@@ -1,5 +1,5 @@
 import App from './components/App.js';
-import mariobros from '../data/mariobros/mariobros.js';
+import mariobros from './data/mariobros/mariobros.js';
 import setData from './components/Setdata.js';
 import shuffle from './components/Shufflecards.js';
 import createHeader from './components/Header.js';
