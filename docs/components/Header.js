@@ -12,7 +12,7 @@ icon.setAttribute('id','icon');
 containerIconsLeft.innerHTML='<i class="fas fa-home fa-2x"></i><i class="fas fa-redo-alt fa-2x"></i><i class="fas fa-pause fa-2x"></i>';
 const nameGame=document.createElement('div');
 nameGame.className='name-game';
-nameGame.innerHTML='<img class="logo" src="../img/mariobroslogo.png" width=40%><br><img class="nameg" src="../img/namegame.png" width=30%>'
+nameGame.innerHTML='<img class="logo" src="./img/mariobroslogo.png" width=40%><br><img class="nameg" src="./img/namegame.png" width=30%>'
 header.appendChild(containerIcons);
 containerIcons.appendChild(containerIconsLeft);
 header.appendChild(nameGame);
