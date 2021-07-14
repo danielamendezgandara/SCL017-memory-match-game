@@ -1,5 +1,6 @@
 
 const displayGame=()=>{
+    
     const display=document.createElement('article');
     const displayTurn=document.createElement('div');
     const displayLevel=document.createElement('div');
